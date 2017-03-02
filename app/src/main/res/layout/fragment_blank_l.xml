@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                tools:context="com.sl.tagmic.xca.fragment.BlankLFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.sl.tagmic.xca.view.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/id_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null">
+        </ListView>
+    </com.sl.tagmic.xca.view.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/no_his"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cao"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="暂无相关扫描记录"/>
+    </LinearLayout>
+
+</RelativeLayout>
